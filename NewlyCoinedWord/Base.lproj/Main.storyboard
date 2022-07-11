@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="D0E-GP-dFk">
+                                <rect key="frame" x="30" y="497" width="354" height="300"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwZ-U9-W46">
                                 <rect key="frame" x="186.5" y="637" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="D0E-GP-dFk">
-                                <rect key="frame" x="30" y="497" width="354" height="300"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urU-ai-J7G">
                                 <rect key="frame" x="30" y="174" width="354" height="48"/>
                                 <subviews>
@@ -53,28 +53,40 @@
                                     <constraint firstAttribute="height" constant="48" id="UTk-WD-Mad"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="veH-8S-kd8">
-                                <rect key="frame" x="30" y="242" width="193" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="veH-8S-kd8">
+                                <rect key="frame" x="30" y="242" width="214" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTN-GF-u4X">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="hastag1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Se0-Fi-hQD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vw4-UW-gg8">
-                                        <rect key="frame" x="49" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="56" y="0.0" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="hastag2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9he-f6-g9c"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot8-ef-vCv">
-                                        <rect key="frame" x="98" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="112" y="0.0" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="hastag3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTv-Jx-riT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzU-EZ-4SV">
-                                        <rect key="frame" x="147" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="168" y="0.0" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="hastag4Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVk-X9-imC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -84,6 +96,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="urU-ai-J7G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="9Oz-CE-5ac"/>
                             <constraint firstItem="NwZ-U9-W46" firstAttribute="centerY" secondItem="D0E-GP-dFk" secondAttribute="centerY" id="IcW-Wz-8lr"/>
@@ -96,14 +109,25 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D0E-GP-dFk" secondAttribute="bottom" constant="65" id="iBh-p0-Y8o"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D0E-GP-dFk" secondAttribute="trailing" constant="30" id="v6z-FX-wAt"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Jjd-sL-rC1" appends="YES" id="F4y-Zg-ALU"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="ResultLabel" destination="NwZ-U9-W46" id="RtK-fR-f0I"/>
                         <outlet property="SearchTextField" destination="kst-nA-bMz" id="QbW-wS-72H"/>
                         <outletCollection property="HastagButtons" destination="bTN-GF-u4X" collectionClass="NSMutableArray" id="a6e-Bz-EAc"/>
+                        <outletCollection property="HastagButtons" destination="Vw4-UW-gg8" collectionClass="NSMutableArray" id="cHy-wK-oQW"/>
+                        <outletCollection property="HastagButtons" destination="Ot8-ef-vCv" collectionClass="NSMutableArray" id="DLq-fs-Ulr"/>
+                        <outletCollection property="HastagButtons" destination="bzU-EZ-4SV" collectionClass="NSMutableArray" id="G0U-PM-Rye"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Jjd-sL-rC1">
+                    <connections>
+                        <action selector="tapGestureTapped:" destination="BYZ-38-t0r" id="k8n-MG-RB9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="388" y="84"/>
         </scene>
