@@ -53,11 +53,11 @@
                                     <constraint firstAttribute="height" constant="48" id="UTk-WD-Mad"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="veH-8S-kd8">
-                                <rect key="frame" x="30" y="242" width="214" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="veH-8S-kd8">
+                                <rect key="frame" x="30" y="242" width="232" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTN-GF-u4X">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="40"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
@@ -65,7 +65,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vw4-UW-gg8">
-                                        <rect key="frame" x="56" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="62" y="0.0" width="46" height="40"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
@@ -73,7 +73,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot8-ef-vCv">
-                                        <rect key="frame" x="112" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="124" y="0.0" width="46" height="40"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
@@ -81,7 +81,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzU-EZ-4SV">
-                                        <rect key="frame" x="168" y="0.0" width="46" height="30"/>
+                                        <rect key="frame" x="186" y="0.0" width="46" height="40"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
@@ -90,7 +90,8 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="354" id="Jsr-I1-cmO"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="6No-Ng-nYs"/>
+                                    <constraint firstAttribute="height" constant="40" id="Y2l-Aj-FPC"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -114,12 +115,12 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="ResultLabel" destination="NwZ-U9-W46" id="RtK-fR-f0I"/>
-                        <outlet property="SearchTextField" destination="kst-nA-bMz" id="QbW-wS-72H"/>
-                        <outletCollection property="HastagButtons" destination="bTN-GF-u4X" collectionClass="NSMutableArray" id="a6e-Bz-EAc"/>
-                        <outletCollection property="HastagButtons" destination="Vw4-UW-gg8" collectionClass="NSMutableArray" id="cHy-wK-oQW"/>
-                        <outletCollection property="HastagButtons" destination="Ot8-ef-vCv" collectionClass="NSMutableArray" id="DLq-fs-Ulr"/>
-                        <outletCollection property="HastagButtons" destination="bzU-EZ-4SV" collectionClass="NSMutableArray" id="G0U-PM-Rye"/>
+                        <outlet property="resultLabel" destination="NwZ-U9-W46" id="X49-uL-PBK"/>
+                        <outlet property="textField" destination="kst-nA-bMz" id="gU8-4j-JkG"/>
+                        <outletCollection property="hastagButtons" destination="bTN-GF-u4X" collectionClass="NSMutableArray" id="6pY-Vj-XgC"/>
+                        <outletCollection property="hastagButtons" destination="Vw4-UW-gg8" collectionClass="NSMutableArray" id="7OQ-NH-gJy"/>
+                        <outletCollection property="hastagButtons" destination="Ot8-ef-vCv" collectionClass="NSMutableArray" id="62h-u0-iC5"/>
+                        <outletCollection property="hastagButtons" destination="bzU-EZ-4SV" collectionClass="NSMutableArray" id="Uw3-Cn-Rjz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
